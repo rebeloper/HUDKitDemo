@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,7 @@
 		C91D6C2125964B4B009A0930 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91D6C2025964B4B009A0930 /* ContentView.swift */; };
 		C91D6C2325964B4E009A0930 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C91D6C2225964B4E009A0930 /* Assets.xcassets */; };
 		C91D6C2625964B4E009A0930 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C91D6C2525964B4E009A0930 /* Preview Assets.xcassets */; };
+		C91D6C3025964B7D009A0930 /* HUDKit in Frameworks */ = {isa = PBXBuildFile; productRef = C91D6C2F25964B7D009A0930 /* HUDKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C91D6C3025964B7D009A0930 /* HUDKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +87,9 @@
 			dependencies = (
 			);
 			name = HUDKitDemo;
+			packageProductDependencies = (
+				C91D6C2F25964B7D009A0930 /* HUDKit */,
+			);
 			productName = HUDKitDemo;
 			productReference = C91D6C1B25964B4B009A0930 /* HUDKitDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -112,6 +117,9 @@
 				Base,
 			);
 			mainGroup = C91D6C1225964B4B009A0930;
+			packageReferences = (
+				C91D6C2E25964B7D009A0930 /* XCRemoteSwiftPackageReference "HUDKit" */,
+			);
 			productRefGroup = C91D6C1C25964B4B009A0930 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -328,6 +336,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C91D6C2E25964B7D009A0930 /* XCRemoteSwiftPackageReference "HUDKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/rebeloper/HUDKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C91D6C2F25964B7D009A0930 /* HUDKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C91D6C2E25964B7D009A0930 /* XCRemoteSwiftPackageReference "HUDKit" */;
+			productName = HUDKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C91D6C1325964B4B009A0930 /* Project object */;
 }
